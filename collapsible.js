@@ -12,3 +12,15 @@ menuToggle.addEventListener("click", () => {
     menuToggle.setAttribute("aria-label", "Open menu");
   }
 });
+
+const videos = document.querySelectorAll(".projects video");
+
+videos.forEach((video) => {
+  video.addEventListener("mouseenter", () => {
+    video.play();
+  });
+
+  video.addEventListener("mouseleave", () => {
+    video.pause();
+  });
+});
