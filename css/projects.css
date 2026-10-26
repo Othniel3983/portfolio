@@ -24,7 +24,7 @@
   border-radius: 10px;
 }
 
-.projects:nth-child(2) {
+.projects:nth-child(even) {
   grid-template-columns: 1fr 2fr;
 }
 
